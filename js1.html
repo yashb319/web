@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JAA SCRIPT</title>
+    <link rel="stylesheet" href="js1_css.css">
+  </head>
+  <body>
+
+    <div class="box">
+      <a onclick="fun(id)"  id="red">#de1f1f</a>
+      <a onclick="fun(id)" id="blue">#7b63f2</a>
+      <a onclick="fun(id)" id="green">#12e639</a>
+      <a onclick="fun(id)" id="yellow">#e8cb0c</a>
+
+    </div>
+  </body>
+  <script type="text/javascript">
+    function fun(id){
+      document.body.style.background=document.getElementById(id).innerHTML;
+    }
+
+  </script>
+</html>

@@ -1,0 +1,35 @@
+body{
+  margin: 10px;
+  padding: 10px;
+  background-color: #34495e
+}
+
+.box{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  padding: 5px;
+  background-color: #f1f1f1;
+}
+
+.box a{
+  width: 40px;
+  height: 40px;
+  float: left;
+  text-indent: -9999px;
+  padding: 5px;
+  margin: 5px;
+}
+
+#red{
+  background-color: #de1f1f;
+}
+#blue{
+  background-color: #7b63f2;
+}
+#green{
+  background-color: #12e639;
+}
+#yellow{
+  background-color: #e8cb0c;
+}
