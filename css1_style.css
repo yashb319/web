@@ -38,7 +38,6 @@ body{
   height: 100%;
   pointer-events: none;
   border-bottom: black solid 1px;
-
 }
 
 .form label::after{
