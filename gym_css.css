@@ -1,0 +1,141 @@
+body{
+  margin: auto;
+  padding: 2px;
+  background: url("zym1.jpg");
+  color: white;
+}
+.left{
+  border: 2px solid red;
+  top: 35px;
+  left: 35px;
+  display: inline-block;
+  position: absolute;
+}
+.left img{
+  width: 130px;
+  height: 120px;
+}
+.left div{
+  text-align: center;
+  line-height: 19px;
+font-size: 26px;
+}
+.mid{
+  border: 2px solid yellow;
+  display: block;
+  width: 45%;
+  margin: 35px auto;
+}
+.nav-bar{
+  display: inline-block;
+}
+.nav-bar li{
+  display:inline-block;
+  font-size: 20px;
+}
+.nav-bar a{
+  text-decoration: none;
+  color: white;
+  padding: 23px 40px;
+}
+.nav-bar a:hover{
+  color: red;
+}
+.right{
+  border: 2px solid green;
+  display: inline-block;
+  position:absolute;
+  top:35px;
+  right: 40px;
+}
+.btn{
+  font-size: 20px;
+  background-color:#121315;
+  color: white;
+  border: 1px solid white;
+  padding: 14px 25px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 9px;
+}
+.right .btn:hover{
+  background-color: #d4c4ba;
+  color: black;
+}
+
+h1{
+  color: white;
+  text-align: center;
+}
+
+
+.main-form{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.form{
+  width: 50%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  margin: 20px;
+
+}
+
+.form input{
+  width: 100%;
+  height: 100%;
+  color: blue;
+  font-size: 25px;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+}
+
+.form label{
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  font-size: 20px;
+  border-bottom: black solid 1px;
+}
+
+.form label::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid blue;
+  transform: translateX(-100%);
+  transition: all 1s ease;
+}
+
+.content-name{
+  color: red;
+  position: absolute;
+  /* font-size: 20px; */
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form input:focus + .label-name .content-name,
+.form input:invalid + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 15px;
+  color: blue;
+}
+
+.form input:focus + .label-name::after,
+.form input:invalid + .label-name::after{
+  transform: translateX(0%);
+}
