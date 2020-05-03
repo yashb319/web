@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Exchange money</title>
+  </head>
+  <body>
+    <h1>Exchange Rate Calculator</h1>
+
+    <p>Choose the currency and the amount to get exchange</p>
+
+    <div class="container">
+      <div class="currency">
+        <select class="currency-one" id="currency-one" name="">
+          <option value="USD">qqq</option>
+          <option value="2">www</option>
+          <option value="3">eee</option>
+          <option value="4">rrr</option>
+          <option value="5">ttt</option>
+        </select>
+        <input type="number" id="amount-one" value="1" placeholder="0">
+      </div>
+
+      <div class="swap-rate-container">
+        <button class="btn" id="swap">
+          Swap
+        </button>
+        <div class="rate" id="rate"></div>
+      </div>
+      <div class="currency">
+        <select class="currency-two" id="currency-two" name="">
+          <option value="USD">qqq</option>
+          <option value="2">www</option>
+          <option value="3">eee</option>
+          <option value="4">rrr</option>
+          <option value="5">ttt</option>
+        </select>
+        <input type="number" id="amount-two" placeholder="0">
+      </div>
+    </div>
+
+
+  </body>
+  <script src="script.js" charset="utf-8"></script>
+</html>

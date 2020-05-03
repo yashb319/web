@@ -1,0 +1,130 @@
+/* CSS RESET */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+#nav-bar{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#nav-bar::before{
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+/* navbar logo */
+#nav-bar .logo{
+  margin: 10px 30px;
+}
+
+.logo img{
+  height: 50px;
+}
+
+/* navbar list */
+#nav-bar ul{
+  display: flex;
+}
+
+#nav-bar ul li{
+  list-style: none;
+}
+
+#nav-bar ul li a{
+  color: white;
+  padding: 23px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+#nav-bar ul li a:hover{
+  color: black;
+  background-color: white;
+}
+
+
+
+/* HOME */
+#home{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 435px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+}
+
+#home::before{
+  content: "";
+  background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+#home h1{
+  margin: 20px;
+}
+
+#home p{
+  margin: 18px;
+}
+
+
+/* SERVICES */
+
+#services{
+  position: relative;
+  display: flex;
+  height: 258px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 361px;
+}
+
+#services .box{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+
+#services .box-items{
+  border: solid 2px red;
+}
+
+#services .box-items img{
+  height: 30px;
+}
+
+/* UTILITIES CLASSES */
+.h1-heading{
+  font-size: 3.8rem;
+  /* margin-left: 30px; */
+}
+
+
+.btn{
+  padding: 5px 20px;
+  background-color: black;
+  color: white;
+  border: solid 2px red;
+  border-radius: 33px;
+  cursor: pointer;
+  font-size: 15px;
+}
