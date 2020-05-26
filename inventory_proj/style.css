@@ -37,7 +37,8 @@ button{
     padding: 10px;
     font-weight: bold;
     font-size: 14px;
-
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
 }
 
 button:hover{
@@ -50,6 +51,8 @@ button:hover{
 button:focus{
     outline: none;
 }
+
+
 
 main{
     flex: 1;

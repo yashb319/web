@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="parallax.js"></script>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="logo-container">
+            <h2>Logo</h2>
+        </div>
+        <div class="hamburger">
+            <h2>hamburger</h2>
+        </div>
+    </nav>
+    <main class="main-container">
+        <div class="main-container-heading">
+            <h1>WELCOME TO THE COMPANY</h1>
+        </div>
+        <div class="main-container-video-left">
+            <video autoplay="true" loop="true" >
+                <source src="https://assets.website-files.com/5bdc4010e035e2c083512543/5c088b01368c33a1969d4075_[3]hero_bg_video-transcode.mp4" data-wf-ignore="true">
+            </video>
+        </div>
+    </main>
+    <div class="about-container">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam saepe minima corporis, repudiandae cupiditate, eveniet obcaecati, iste ratione et eligendi minus porro enim recusandae dicta.</p>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+    </div>
+    <div class="parallax-container">
+        <div class="left">
+            <div class="left-item-1" id="scene">
+                <div class="image-1 layer" data-depth="1">
+                    <img src="https://assets.website-files.com/5bdc4010e035e2c083512543/5c088d897b38201beaab1179_%5B16%5Dimg_project_1.jpg"" alt="" srcset="">
+                </div>
+                <div class="text layer" data-depth="2">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem, ipsum dolor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+
+        </div>
+    </div>
+    <div class="services-container">
+        <div class="heading">
+            <div class="heading-head">
+                Our Services
+            </div> 
+            <div class="heading-circle">
+                <img src="https://assets.website-files.com/5bdc4010e035e2c083512543/5c02566942e49e5ceb0c16af_%5B25%5Dico_services.svg" width="26" alt="" class="image">
+            </div>
+            <div class="heading-line">
+                <hr>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-left">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consec</p>
+                <p>tetur adipisicing elit. Accusamus, quasi.</p>
+            </div>
+            <div class="content-right">
+                <ul class="list">
+                    <li class="list-items1">Lorem, ipsum dolor.</li>
+                    <li class="list-items2">Lorem, ipsum dolor.</li>
+                    <li class="list-items3">Lorem, ipsum dolor.</li>
+                    <li class="list-items4">Lorem, ipsum dolor.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="testimonials-container">
+        <div class="heading">
+            <div class="heading-head">
+                Ours Testinomials
+            </div> 
+            <div class="heading-circle">
+                <img src="https://assets.website-files.com/5bdc4010e035e2c083512543/5c025c80758853757c06e0ce_%5B26%5Dico_testimonials.svg" width="26" alt="" class="image">
+            </div>
+            <div class="heading-line">
+                <hr>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-left">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consec</p>
+                <p>tetur adipisicing elit. Accusamus, quasi.</p>
+            </div>
+            <div class="content-right">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consec</p>
+                <p>tetur adipisicing elit. Accusamus, quasi.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-container">
+        <div class="button">
+            <button>Get In Touch</button>
+        </div>
+        <div class="content">
+            <h1>yashb319@gmail.com</h1>
+            <p>Nihal Chand Building</p>
+            <p>Chandi Road</p>
+            <p>Hapur-245101</p>
+        </div>
+        <div class="footer">
+            <div class="footer-left">
+                Lorem, ipsum.
+            </div>
+            <div class="footer-right">
+                Lorem, ipsum dolor.
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="script.js"></script> -->
+    <script lang="javascript">
+        var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene,{
+            hoverOnly: true
+        });
+    </script>
+</body>
+</html>

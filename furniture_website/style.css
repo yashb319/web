@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 250, 250);
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    background-color: #111;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-container .logo-container img{
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navbar-container .list{
+    margin-left: auto;
+}
+
+.navbar-container .list ul
+{
+    display: flex;
+    list-style: none;
+}
+
+ .navbar-container .list ul li a:hover,
+ .navbar-container .list ul li:hover
+ {
+    color: #fff;
+    transform: scale(1.3);
+} 
+
+.navbar-container .list ul li a{
+    text-decoration: none;
+    padding: 20px
+}
+
+#section-1{
+    background-image:linear-gradient( rgb(248, 153, 29), black
+    );height: 90vh;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+#section-1 h1{
+    padding: 30px 0;
+
+}
+#section-2{
+    height: 50vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1px 1fr 1fr 1fr 1fr 1fr 1px;
+    grid-template-rows: 10px 1fr 10px;    
+    grid-column-gap: 15px;
+}
+
+#section-2 .grid-item1{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: rgb(26, 243, 243);
+}
+#section-2 .grid-item2{
+    background-color: rgb(15, 15, 15);
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+#section-2 .grid-item3{
+    background-color: rgb(192, 236, 236);
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+#section-2 .grid-item4{
+    background-color: rgb(198, 238, 22);
+    grid-row: 2/3;
+    grid-column: 5/6;
+}
+#section-2 .grid-item5{
+    background-color: rgb(238, 107, 114);
+    grid-row: 2/3;
+    grid-column: 6/7;
+}
+
+.card{
+    border-radius: 15px;
+    position: relative;   
+    cursor: pointer; 
+}
+.card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #9bdc28;
+    clip-path: circle(50% at 160% -30%);    
+    transition: 0.5s;
+}
+.card:hover::before{
+    clip-path: circle(90% at 90% -10%);  
+    /* z-index: 1; */
+}
+
+.content-box{
+    position:absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* opacity: 0; */
+    transition: 0.5s ease;
+    text-align: center;
+}
+
+.card:hover .content-box{
+    transform: translate(-50%, -40%);
+    opacity: 1;
+}
+
+.content-box h1{
+    margin-bottom: 30px;
+}
+
+.content-box p{
+    font-size: 17px;
+    line-height: 35px;
+    opacity: 0;
+}
+
+.card:hover .content-box p{
+    opacity: 1;
+}
+
+#card-btn{
+    color:#fff;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 15px;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#card-btn:hover{
+    transform: scale(1.1);    
+}
+
+.card:hover .content-box #card-btn{
+    opacity: 1;
+}
+
+#section-3{
+    background-color: rgb(225, 245, 139);
+    height: 100vh;
+    width: 100%;
+
+}
+.vid
+{right: 0px;
+    bottom: 0px;
+    width: 50%;
+    height: 100%;
+}
+#section-4{
+    background-color: rgb(238, 148, 233);
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+
+.outer{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translateY(-50%);
+}
+
+#section-4 .form-container{
+    background-color: black;
+    width: 50vh;
+    height: 50vh;
+    position: relative;
+    /* opacity: 1; */
+}
+
+#section-4 .form-container form{
+    position: absolute;
+    /* background-color: blue; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+form{
+    display: flexbox;
+    align-items: center;
+    /* background-color: cyan; */
+    justify-content: center;
+}
+.input-field{
+    margin: 20px 0;
+}
+.input-field input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+}
+
+.btn{
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 90px;
+    height: 30px;
+    background-color: rgba(119, 91, 0, 0.897);
+}
+.btn:hover{
+    transform: scale(1.1);
+}
